@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+.Satellite{
+  .bar{
+
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+
+    span{
+      margin: 10px;
+    }
+    div{
+border: 1px solid #ffffff;
+
+width: 100%;
+    }
+  }
+
+  .SatelliteInfo {
+
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    align-items: center;
+    height: 87vh;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    div {
+
+      width: 1000px;
+      font-size: 28px;
+      h1 {
+        font-size: 85px;
+        margin-bottom: 10px;
+      }
+
+      span {
+
+        font-size: 30px;
+      }
+
+      div {
+        margin-top: 10px;
+      }
+
+    }
+
+    img {
+
+      animation: rotate, pulse 10s ease-in-out infinite;
+      border-radius: 150px;
+    }
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: RotateZ(5deg);
+  }
+  50% {
+    transform: RotateZ(0deg);
+  }
+  100% {
+    transform: RotateZ(5deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow:0px 0px 330px 10px white ;
+  }
+  50% {
+    box-shadow:0px 0px 800px 10px white ;
+  }
+  100% {
+    box-shadow:0px 0px 330px 10px white ;
+  }
+}

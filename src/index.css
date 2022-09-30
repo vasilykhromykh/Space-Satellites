@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+body {
+
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://unsplash.com/photos/uhjiu8FjnsQ/download");
+  background-position: center;
+  background-size: 1700px;
+  animation: move 100s ease infinite;
+  cursor: none;
+  color: white;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
